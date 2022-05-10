@@ -1,0 +1,26 @@
+.testimonial-card {
+	width: 100%;
+	height: auto;
+	border: 1px solid $border;
+	padding: 3rem;
+
+	.testimonial-stars {
+		margin-bottom: 16px;
+	}
+
+	.testimonial-body {
+		width: 100%;
+		.testimonial-author {
+			width: 100%;
+			display: flex;
+			.author-image {
+				width: 50%;
+			}
+			.author-cite {
+				width: 50%;
+				display: flex;
+				flex-direction: column;
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+ul {
+	list-style: disc inside;
+	color: $text-primary;
+}
+
+ol {
+	list-style: decimal inside;
+	color: $text-primary;
+}
+
+ol,
+ul {
+	padding-left: 0;
+	margin-top: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+	margin: 1.5rem 0 1.5rem 3rem;
+}
+
+li {
+	font-size: $text-06;
+	font-family: $font-sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%;
+	letter-spacing: 0;
+	color: $text-primary;
+	margin-bottom: 1rem;
+}
+
+ul li {
+	list-style: none;
+}
+
+li:before {
+	font-family: "FontAwesome";
+	content: "\f058";
+	margin-right: 1.5rem;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+}
