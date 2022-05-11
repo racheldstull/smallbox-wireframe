@@ -38,6 +38,10 @@
 
 .image-stack {
 	position: relative;
+	padding: 23rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	img {
 		position: absolute;
@@ -52,13 +56,13 @@
 		}
 
 		&:nth-child(2) {
-			margin-top: 25%;
+			margin-top: 15%;
 			margin-right: 15%;
 			background-color: $border;
 		}
 
 		&:last-child {
-			margin-top: 50%;
+			margin-top: 30%;
 		}
 	}
 }
@@ -75,23 +79,49 @@
 	}
 }
 
-@media screen and (max-width: $bp-lg) {
-	.hero-hex {
-		.section-image {
-			width: 100%;
+@media screen and (max-width: $bp-xl) {
+	.image-stack {
+		img {
+			&:nth-child(2) {
+				margin-top: 25%;
+				margin-right: 15%;
+				background-color: $border;
+			}
+
+			&:last-child {
+				margin-top: 50%;
+			}
 		}
 	}
 }
 
 @media screen and (min-width: $bp-lg) {
-	.section-image {
-		overflow: hidden;
-		max-height: 60rem;
-	}
 	.hero-hex {
 		.section-image {
 			width: 70%;
 		}
+	}
+}
+
+@media screen and (max-width: $bp-lg) {
+	.image-stack {
+		width: 100%;
+
+		img {
+			&:nth-child(2) {
+				margin-top: 20%;
+				margin-right: 15%;
+				background-color: $border;
+			}
+
+			&:last-child {
+				margin-top: 45%;
+			}
+		}
+	}
+	.croppable-image {
+		overflow: hidden;
+		max-height: 60rem;
 	}
 }
 
