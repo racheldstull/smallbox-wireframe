@@ -1,0 +1,33 @@
+.carousel-images {
+	display: flex;
+	justify-content: left;
+	overflow-x: hidden;
+	width: 100%;
+
+	&::-webkit-scrollbar {
+		visibility: hidden;
+	}
+
+	.carousel-image {
+		position: relative;
+		left: 0;
+		min-width: 22%;
+		margin: 0 1rem;
+
+		&:first-child {
+			margin-left: -7%;
+		}
+	}
+}
+
+@media screen and (max-width: $bp-med) {
+	.carousel-images {
+		.carousel-image {
+			min-width: 50%;
+
+			&:first-child {
+				margin-left: -27%;
+			}
+		}
+	}
+}

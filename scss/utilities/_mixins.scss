@@ -1,0 +1,11 @@
+//mixins
+@mixin fontawesome {
+	font-family: "FontAwesome";
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+}
+
+//global variables
+$margin: 5rem;
+$header-margin: 0 5rem;

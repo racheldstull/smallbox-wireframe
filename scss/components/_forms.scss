@@ -1,0 +1,8 @@
+input[type="email"] {
+	width: 100%;
+	padding: 1rem;
+	border: none;
+	border-bottom: 5px solid $primary;
+	background-color: $border-overlay;
+	color: $white;
+}

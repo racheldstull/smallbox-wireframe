@@ -1,0 +1,51 @@
+#brand-cta {
+	display: flex;
+	position: relative;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+
+	.brands {
+		display: flex;
+		width: 80%;
+		z-index: 99;
+		padding: 2rem;
+		background-color: $white;
+
+		.brands-wrapper {
+			display: flex;
+			justify-content: space-between;
+			background-color: $white;
+		}
+	}
+
+	.cta {
+		display: flex;
+		z-index: 98;
+		margin-top: -6rem;
+		width: 100%;
+		padding: 8rem 8rem 4rem 8rem;
+		background-color: $primary;
+	}
+
+	&::before {
+		content: "";
+		z-index: 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 60%;
+		background-color: $secondary;
+	}
+}
+
+@media screen and (max-width: $bp-ex) {
+	.brands {
+		justify-content: center;
+
+		.brands-wrapper {
+			flex-direction: column;
+		}
+	}
+}

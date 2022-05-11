@@ -1,0 +1,13 @@
+.section-stats {
+	display: flex;
+	justify-content: space-between;
+
+	.section-stat {
+		width: 33%;
+
+		.h2 {
+			color: $primary;
+			margin-bottom: -0.5rem;
+		}
+	}
+}

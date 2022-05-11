@@ -1,8 +1,9 @@
 section {
-	width: 100%;
 	display: flex;
-	padding: 5rem;
 	justify-content: space-between;
+	flex-direction: row;
+	width: 100%;
+	padding: $margin;
 
 	.section-full,
 	.section-half {
@@ -19,22 +20,16 @@ section {
 
 	.section-header {
 		.h6 {
-			position: relative;
-			z-index: 100;
-
 			&::before {
+				@include fontawesome;
+				content: "\f1ce";
 				z-index: -100;
 				position: absolute;
 				top: 0;
 				left: 0;
 				margin-top: 4.2rem;
-				font-family: "FontAwesome";
-				content: "\f1ce";
 				color: $smoke;
 				font-size: 150px;
-				font-style: normal;
-				font-weight: normal;
-				text-decoration: inherit;
 			}
 		}
 
@@ -45,55 +40,23 @@ section {
 		}
 
 		h1,
-		h2 {
+		h2,
+		.h6 {
 			position: relative;
-			z-index: 100;
+			z-index: 99;
 		}
 		.section-body {
 			padding-bottom: 1rem;
 		}
 	}
+}
 
-	.section-image,
-	.image-stack {
-		width: 100%;
-		display: flex;
-		color: $white;
+@media screen and (max-width: $bp-med) {
+	section {
+		flex-direction: column;
 
-		img {
+		.section-half {
 			width: 100%;
-			height: auto;
-			background-color: $primary;
 		}
-	}
-
-	.image-stack {
-		position: relative;
-
-		img {
-			position: absolute;
-			top: 0;
-			left: 0;
-			background-color: #c4c4c4;
-			width: 66%;
-
-			&:first-child,
-			&:last-child {
-				margin-left: 15%;
-				background-color: #c4c4c4;
-			}
-
-			&:nth-child(2) {
-				margin-top: 25%;
-				background-color: $border;
-			}
-
-			&:last-child {
-				margin-top: 50%;
-			}
-		}
-	}
-
-	.section-cards {
 	}
 }

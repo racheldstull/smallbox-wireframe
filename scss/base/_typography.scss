@@ -27,7 +27,6 @@ h1,
 	text-transform: uppercase;
 	color: $text-heading;
 	margin-bottom: 1rem;
-	max-width: 80%;
 }
 
 h2,
@@ -41,7 +40,6 @@ h2,
 	text-transform: uppercase;
 	color: $text-heading;
 	margin-bottom: 1rem;
-	max-width: 80%;
 }
 
 h3,
@@ -55,7 +53,6 @@ h3,
 	text-transform: uppercase;
 	color: $text-heading;
 	margin-bottom: 0.2rem;
-	max-width: 80%;
 }
 
 h4,
@@ -68,8 +65,7 @@ h4,
 	letter-spacing: 0.07em;
 	text-transform: uppercase;
 	color: $text-heading;
-	margin-bottom: 0.2rem;
-	max-width: 80%;
+	margin-bottom: 1rem;
 }
 
 h5,
@@ -83,7 +79,6 @@ h5,
 	text-transform: uppercase;
 	color: $text-heading;
 	margin-bottom: 0.2rem;
-	max-width: 80%;
 }
 
 h6,
@@ -97,13 +92,13 @@ cite {
 	letter-spacing: 0.07em;
 	text-transform: uppercase;
 	color: $text-primary;
-	max-width: 80%;
 	margin-bottom: 1rem;
 }
 
 a,
 button,
-.text-button {
+.text-button,
+.copyright {
 	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 600;
@@ -121,7 +116,8 @@ a {
 
 p,
 blockquote,
-span {
+span,
+input[type="email"] {
 	font-family: "Poppins";
 	font-style: normal;
 	font-weight: 400;
@@ -144,7 +140,6 @@ span {
 }
 
 .icon-big {
-	font-family: "Font Awesome 5 Free";
 	font-style: normal;
 	font-weight: 900;
 	font-size: $text-02;
@@ -170,4 +165,45 @@ span {
 	letter-spacing: 0.07em;
 	text-transform: uppercase;
 	color: $text-heading;
+}
+
+@media screen and (max-width: $bp-lg) {
+	h1,
+	.h1 {
+		font-size: $text-02;
+	}
+}
+
+@media screen and (max-width: $bp-med) {
+	h1,
+	.h1 {
+		font-size: $text-01;
+	}
+}
+
+@media screen and (max-width: $bp-ex) {
+	h1,
+	.h1 {
+		font-size: $text-02;
+	}
+	h2,
+	.h3 {
+		font-size: $text-03;
+	}
+	h3,
+	.h3 {
+		font-size: $text-04;
+	}
+	h4,
+	.h4 {
+		font-size: $text-05;
+	}
+	h5,
+	.h5 {
+		font-size: $text-06;
+	}
+	h6,
+	.h6 {
+		font-size: $text-07;
+	}
 }

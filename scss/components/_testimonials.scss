@@ -6,20 +6,29 @@
 
 	.testimonial-stars {
 		margin-bottom: 16px;
+
+		.fa-solid {
+			color: $rating;
+		}
 	}
 
 	.testimonial-body {
 		width: 100%;
+
 		.testimonial-author {
 			width: 100%;
 			display: flex;
+			align-items: center;
+
 			.author-image {
-				width: 50%;
+				width: 85px;
 			}
+
 			.author-cite {
-				width: 50%;
 				display: flex;
 				flex-direction: column;
+				width: calc(100% - 85px);
+				padding-left: 2rem;
 			}
 		}
 	}

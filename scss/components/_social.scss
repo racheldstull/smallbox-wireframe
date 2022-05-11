@@ -1,0 +1,25 @@
+.fa-brands {
+	@include fontawesome;
+	padding: 0 1rem;
+	font-size: $text-04;
+	color: $text-primary;
+
+	&:first-child {
+		padding: 0 0 0 1rem;
+	}
+
+	&:last-child {
+		padding: 0 1rem 0 0;
+	}
+
+	&:hover,
+	&:active {
+		color: $white;
+	}
+}
+
+@media screen and (max-width: $bp-med) {
+	.fa-brands {
+		font-size: $text-03;
+	}
+}

@@ -1,11 +1,16 @@
-button {
-	color: $white;
-	background-color: $primary;
-	padding: 2.5rem 4rem;
+button,
+input[type="submit"] {
 	margin-top: 1rem;
 	border: none;
+	padding: 2.2rem 4rem;
+	background-color: $primary;
+	color: $white;
 
 	&:hover {
 		background-color: $hover;
 	}
+}
+
+.button-secondary {
+	background-color: $secondary;
 }

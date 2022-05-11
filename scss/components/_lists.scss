@@ -37,10 +37,7 @@ ul li {
 }
 
 li:before {
-	font-family: "FontAwesome";
+	@include fontawesome;
 	content: "\f058";
 	margin-right: 1.5rem;
-	font-style: normal;
-	font-weight: normal;
-	text-decoration: inherit;
 }
