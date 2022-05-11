@@ -4,6 +4,12 @@ Wireframe build for SmallBox
 
 ***
 
+## Tools Used:
+
+- Visual Studio Code
+- Prepros
+- GitHub
+
 ## Notes:
 
 #### - Navigation
